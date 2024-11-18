@@ -2,11 +2,12 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import HomeLayout from "../layouts/HomeLayout";
 import CategoryNews from "../components/Pages/CategoryNews";
 import AuthLayout from "../layouts/AuthLayout";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import NewsDetails from "../components/Pages/NewsDetails";
 import PrivateRoute from "./privateRoute";
+import App from "../App";
 
 
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
                 element:   <Register></Register>
             }
         ]
+    },
+    {
+        path: '/career',
+        element: <App></App>
     },
     {
         path:'*',
