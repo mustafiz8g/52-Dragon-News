@@ -24,7 +24,7 @@ const Register = () => {
         const email = form.get('email')
         const photo = form.get('photo')
         const password = form.get('password')
-        console.log(name,email,photo,password)
+        // console.log(name,email,photo,password)
 
         createNewUser(email,password)
         .then(result => {
@@ -39,7 +39,7 @@ const Register = () => {
             })
         })
         .catch(err => {
-            console.log('Error::::', error.code , error.message)
+            // console.log('Error::::', error.code , error.message)
 
         })
 

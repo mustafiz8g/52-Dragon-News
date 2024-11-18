@@ -13,7 +13,7 @@ const Login = () => {
     
     const location = useLocation();
     const navigate = useNavigate();
-    console.log(location)
+    // console.log(location)
     
     const handleSubmit = e => {
         e.preventDefault();
@@ -21,14 +21,14 @@ const Login = () => {
        
         const email = form.get('email')
         const password = form.get('password')
-        console.log(email,password)
+        // console.log(email,password)
 
         loginUser(email,password)
         .then(result => {
             const user = result.user;
             setUser(user);
             navigate(location?.state ? location.state : '/')
-            console.log(user)
+            // console.log(user)
         })
         .catch(err => {
         //   alert( error.code , )
