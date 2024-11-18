@@ -25,7 +25,7 @@ const HomeLayout = () => {
                 <LeftNavbar></LeftNavbar>
             </aside>
             <section className="col-span-6">
-                <h2 className="font-medium">Dragon News Home</h2>
+               
                 <Outlet></Outlet>
             </section>
             <aside className="col-span-3">

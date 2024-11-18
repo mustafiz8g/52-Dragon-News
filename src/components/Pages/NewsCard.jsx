@@ -2,6 +2,7 @@
 
 import { FaRegBookmark } from "react-icons/fa6";
 import { IoMdShare } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 const NewsCard = (props = {}) => {
@@ -46,7 +47,7 @@ const NewsCard = (props = {}) => {
         <h3 className="card-title">{singleNews.title}</h3>
         <p className="text-sm text-gray-700">
           {singleNews.details.substring(0, 100)}...{" "}
-          <span className="text-primary cursor-pointer">Read More</span>
+         <Link to= {`/news/${singleNews._id}`} className="text-primary cursor-pointer">Read More</Link>
         </p>
 
         {/* Rating and Views */}

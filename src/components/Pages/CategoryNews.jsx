@@ -8,7 +8,8 @@ const CategoryNews = () => {
     console.log(news);
     return (
         <div>
-            category total {news.length}
+             <h2 className="font-medium">Dragon News Home</h2>
+           <p> category total {news.length}</p>
     <div className="space-y-3">
         {
             news.map(singleNews => <NewsCard singleNews = {singleNews} key={singleNews._id}></NewsCard>)
